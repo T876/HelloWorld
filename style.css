@@ -37,3 +37,26 @@
 body {
     margin: 0px;
 }
+img {
+    width: 200px;
+    height: auto;
+}
+.sectionHeading{
+    text-align: center;
+}
+.sectionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.grid {
+    border: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.playerImg{
+    padding-left: auto;
+    padding-right: auto;
+}

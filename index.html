@@ -29,33 +29,54 @@
         <div class = 'OptionGalleries'>
             <h1>Option Galleries</h1>
             <p>(clicking on image will take you to the respective gallery. Not all images have attached links at this point)</p>
-            <h2 id = 'playersCubes'>For the Players</h2>
-            <h3>Player Charachters</h3>
-            <a href = 'PlayerCharachter.html' target = '_blank'><img src='https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/357/420/618/636272696881281556.png'/></a>
-            <h3>Pets / Animals</h3>
-            <img src = 'https://i.pinimg.com/originals/03/5c/03/035c0395f48db185b97f7d3ba5ac7c59.jpg'/>
-            <h3>Mounts and Vehicles</h3>
-            <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/191/1000/1000/636252763295291063.jpeg'/>
-            <h3>NPCs</h3>
-            <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/277/1000/1000/636252769861281900.jpeg'/>
-            <h2 id = 'baddiesCubes'>Beasties and Baddies</h2>
+            
+            <h2 id = 'playersCubes' class = 'sectionHeading'>For the Players</h2>
+            <div class = 'sectionContainer'>
+                <div class = 'grid 1'>
+                    <h3>Player Charachters</h3>
+                    <a href = 'PlayerCharachter.html' target = '_blank'><img class = 'playerImg' src='http://www.dndadventure.com/wp-content/uploads/2017/03/captain.png' /></a>
+                </div>
+                <div class = 'grid 2'>
+                     <h3>Pets / Animals</h3>
+                    <img src = 'https://i.pinimg.com/originals/03/5c/03/035c0395f48db185b97f7d3ba5ac7c59.jpg'/>
+                </div>
+                <div class = 'grid 3'>
+                    <h3>Mounts and Vehicles</h3>
+                    <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/191/1000/1000/636252763295291063.jpeg'/>
+                </div>
+                <div class = 'grid 3'>
+                    <h3>NPCs</h3>
+                    <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/277/1000/1000/636252769861281900.jpeg'/>
+                </div>
+            </div>
+            <h2 id = 'baddiesCubes' class = 'sectionHeading'>Beasties and Baddies</h2>
+            
             <h3>Demons and Devils</h3>
             <img src = 'https://www.aidedd.org/dnd/images/devilIce.jpg'/>
+            
             <h3>Constructs</h3>
             <img src = 'https://www.aidedd.org/dnd/images/golemClay.jpg'/>
+            
             <h3>Elementals</h3>
             <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/84/1000/1000/636252736680781387.jpeg'/>
+            
             <h3>Fey</h3>
             <img src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/774/1000/1000/636331437289736779.jpeg'/>
+            
             <h3>Abberations</h3>
             <img src = 'http://geekandsundry.com/wp-content/uploads/2017/04/mouther.jpeg'/>
+            
             <h3>Slimes</h3>
             <img src = 'data:image/jpeg;base64,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'/>
-            <h2 id = 'godsCubes'>Gods</h2>
+            
+            <h2 id = 'godsCubes' class = 'sectionHeading'>Gods</h2>
+            
             <h3>Good aligned gods</h3>
             <img src = 'https://geekandsundry.com/wp-content/uploads/2017/05/Cleric-Feature.jpg'/>
+            
             <h3>Neutral aligned gods</h3>
             <img src = 'https://pathfinderwiki.com/mediawiki/images/thumb/0/04/Nethys.jpg/250px-Nethys.jpg'/>
+            
             <h3>evil aligned gods</h3>
             <img src = 'http://3.bp.blogspot.com/-l8OPSzFZFUA/VeKL_qXj-YI/AAAAAAAABOo/V_Y_L81Cx9s/s1600/elf_mage_by_blmd-d55hf3t.jpg'/>
         </div>
