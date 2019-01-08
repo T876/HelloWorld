@@ -3,7 +3,13 @@
     font-family: "Arial", Arial;
     font-size: 1em;
 }
-
+.siteLogo {
+    float: left;
+    height: 50px;
+    width: auto;
+    position: relative;
+    z-index: 10;
+}
 #backgroundTop{
     width: 100%;
     height: auto;
@@ -38,6 +44,9 @@
     text-align: center;
     color: white;
     display: inline-block;
+    border-color: white;
+    border: solid;
+    border-width: 2px;
 }
 
 #title {
@@ -51,8 +60,8 @@ body {
     padding-top: 0px;
 }
 img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 300px;
 }
 .sectionHeading{
     text-align: center;
@@ -67,7 +76,7 @@ img {
     margin-right: auto;
 }
 .pictureCaption1{
-    margin-bottom: -210px;
+    margin-bottom: -70%;
     z-index: 5;
     position: relative;
     color: rgb(134, 134, 134);
@@ -79,5 +88,17 @@ img {
     position: relative;
 }
 .a{
-    margin-top: 200px;
+    margin-top: 150px;
 }
+.icon{
+    height: 200px;
+    width: 200px;
+}
+/*
+.otherMVPThings {
+    position: fixed | absolute | sitcky;
+    display: inline | block;
+    background-color: blue;
+
+}
+*/
