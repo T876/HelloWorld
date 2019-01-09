@@ -7,7 +7,7 @@
     float: left;
     height: 50px;
     width: auto;
-    position: relative;
+    position: absolute;
     z-index: 10;
 }
 #backgroundTop{
@@ -40,13 +40,15 @@
 }
 .top-bar{
     width: 250px;
-    height: 50px;
+    height: 31px;
     text-align: center;
     color: white;
     display: inline-block;
     border-color: white;
     border: solid;
     border-width: 2px;
+    margin-top: 0px;
+    padding-top: 15px;
 }
 
 #title {
@@ -59,10 +61,6 @@ body {
     margin: 0px;
     padding-top: 0px;
 }
-img {
-    width: auto;
-    height: 300px;
-}
 .sectionHeading{
     text-align: center;
 }
@@ -72,11 +70,12 @@ img {
     grid-template-rows: 1fr 1fr;
 }
 .grid {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    align-content: center;
 }
 .pictureCaption1{
-    margin-bottom: -70%;
+
     z-index: 5;
     position: relative;
     color: rgb(134, 134, 134);
@@ -86,9 +85,6 @@ img {
 .playerImage {
     z-index: 0;
     position: relative;
-}
-.a{
-    margin-top: 150px;
 }
 .icon{
     height: 200px;
@@ -102,3 +98,56 @@ img {
 
 }
 */
+
+
+
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 562.5px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+ /*   margin-left: auto;
+    margin-right: auto;*/
+}
+
+.grid-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.grid-right {
+    margin-right: 0;
+    margin-left: auto;
+}

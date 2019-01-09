@@ -7,18 +7,24 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     </head>
 
     <body>
         <img id = 'siteLogo' src = 'DungeonTech logo.jpg'>
             
-        <div class = 'header'>
-            <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><p class = 'top-bar'>About</p></a>
-            <a href='signin.html' target='_self'><p class = 'top-bar' >Sign in/Create account</p></a>
-            <a href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')"><p class = 'top-bar'>(currently) free dungeon generator!</p></a>
-            <a href="#" onclick="openModal('share-modal', 'close-modal-share')"><p class = 'top-bar'>Share</p></a>
-            <a href="#" onclick="openModal('credits-modal', 'close-modal-credits')"><p class = 'top-bar'>Credits</p></a>
-        </div>
+        <ul class = 'header'>
+            <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><li class = 'top-bar'>About</li></a>
+            <a href='signin.html' target='_self'><li class = 'top-bar' >Sign in/Create account</li></a>
+            <a href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')"><li class = 'top-bar'>(currently) free dungeon generator!</li></a>
+            <a href="#" onclick="openModal('share-modal', 'close-modal-share')"><li class = 'top-bar'>Share</li></a>
+            <a href="#" onclick="openModal('credits-modal', 'close-modal-credits')"><li class = 'top-bar'>Credits</li></a>
+        </ul>
 
         <div id="about-me-modal" class="modal">
             <div id="about-me-modal-content" class="modal-content">
@@ -75,11 +81,11 @@
                 <a href = 'https://orkerhulen.dk/onewebmedia/Monster%20Manual.pdf' target = '_blank'><li>Stats for monsters</li></a>
                 <a href = 'https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-b-gods-of-the-multiverse' target = '_blank'><li>Gods pantheon</li></a>
             </ul>
-            <ol>
-                <a href = '#playersCubes'><li>For the Players</li></a>
-                <a href = '#baddiesCubes'><li>Beasties and Baddies</li></a>
-                <a href = '#godsCubes'><li>Gods</li></a>
-            </ol>
+            <select class="ui dropdown">
+                    <option value="">Site Navigation</option>
+                    <option value="1"><a href = '#playersCubes'>For the Players</a></option>
+                    <option value="0"><a href = '#baddiesCubes'>Beasties and Baddies</a></option>
+            </select>
             <!--Insert images here, going to take those at home-->
         </div>
         <div class = 'OptionGalleries'>
@@ -87,30 +93,30 @@
             <p>(clicking on image will take you to the respective gallery. Not all images have attached links at this point)</p>
             
             <h2 id = 'playersCubes' class = 'sectionHeading'>For the Players</h2>
-            <div class = 'sectionContainer'>
-                <div class = 'grid a'>
-                    <div class = 'pictureCaption1'>
-                        <h3>Player Characters</h3>
+            <div id="main-content" class="img center-content-container">
+                    <a href="PlayerCharachter.html" target="_blank">
+                    <div class="grid grid-left card">  
+                            <i class="fas fa-fist-raised fa-10x"></i>
+                            <h3 class="container">Player Charachters</h3> 
                     </div>
-                    <i class="fas fa-fist-raised icon"></i>
-                </div>
-                <div class = 'grid a'>
-                    <div class = 'pictureCaption1'>
-                        <h3>Pets / Animals</h3>
+                    </a>
+                    <div class="grid grid-right card">
+                            <a href="./Towers.html" target="_blank"><img src="./Tower.jpg" alt="A great tower looming over these lands" width=562.5 length=316.5> </a>
+                            <h3 class="container">Make Mejestic towers!</h3>
+                    </div>  
+                    
+                    <div class="grid grid-left card">
+                            <a href="./Settlements.html" target="_blank"><img src="./Settlement.jpg" alt="The great city of thalanor, standing tall and true" width=562.5 length=316.5> </a> 
+                            <h3 class="container">Make foreign settlements!</h3>
                     </div>
-                </div>
-                <div class = 'grid a'>
-                    <div class = 'pictureCaption1'>
-                        <h3>Mounts and Vehicles</h3>
+                    
+                    <div class="grid grid-right card">
+                            <a href="./Mansions, housholds.html" target="_blank"><img src="./Mansion.jpg" alt="Haunted manshion long forgotten by the people, enter at your own risk!" width=562.5 length=316.5></a>
+                            <h3 class="container">Make omnipresent mansion or household's!</h3>
                     </div>
-                </div>
-                <div class = 'grid a'>
-                    <div class = 'pictureCaption1'>
-                        <h3>NPCs</h3>
-                    </div>
-                </div>
+            </div>
         </div>
-        
+        <!--
             <h2 id = 'baddiesCubes' class = 'sectionHeading'>Beasties and Baddies</h2>
         <div class = 'sectionContainer'>   
             <div class = 'grid a'> 
@@ -173,5 +179,6 @@
                 </div>
             </div>
         </div>
+    -->
     </body>
 </html>
