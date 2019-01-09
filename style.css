@@ -138,6 +138,8 @@ img {
 .grid {
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #000F26;
+    padding-top: 20px;
  /*   margin-left: auto;
     margin-right: auto;*/
 }
