@@ -3,16 +3,17 @@
     font-family: "Arial", Arial;
     font-size: 1em;
 }
-.siteLogo {
+#siteLogo {
     float: left;
     height: 50px;
     width: auto;
     position: absolute;
     z-index: 10;
 }
+
 #backgroundTop{
     width: 100%;
-    height: auto;
+    height: 10pt;
     position: absolute;
     z-index: 0;
 }
@@ -23,6 +24,7 @@
     font-size: 50px;
 }
 .opener {
+    margin-top: -20px;
     text-align: left;
     padding-bottom: 350px;
     z-index: 10;
@@ -35,8 +37,8 @@
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    position: absolute;
     margin-top: 0px;
+
 }
 .top-bar{
     width: 250px;
@@ -44,16 +46,14 @@
     text-align: center;
     color: white;
     display: inline-block;
-    border-color: white;
-    border: solid;
-    border-width: 2px;
     margin-top: 0px;
     padding-top: 15px;
+    padding-bottom: 31px
 }
 
 #title {
     height: 50px;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 7px;
     margin-top: 0px;
 }
@@ -124,7 +124,7 @@ img {
 
 
 .container {
-  padding: 2px 16px;
+  padding: 2px 16px 0px 16px;
 }
 #main-content {
     display: grid;
@@ -150,4 +150,14 @@ img {
 .grid-right {
     margin-right: 0;
     margin-left: auto;
+}
+
+#zsticky
+{   
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0pt;
 }

@@ -2,22 +2,26 @@
 <html>
     <head>
         <title>Dnd Cubies | home</title>
+        <link rel = 'icon' href = 'DungeonTech logo.jpg'/>
         <link rel="stylesheet" type='text/css' href='style.css'/>
         <link rel="stylesheet" type='text/css' href='modals.css'/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="script.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
 <script
 src="https://code.jquery.com/jquery-3.1.1.min.js"
 integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </head>
 
     <body>
+        <div id="zsticky">
         <img id = 'siteLogo' src = 'DungeonTech logo.jpg'>
-            
+            <div id = 'stickyDiv'>
         <ul class = 'header'>
             <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><li class = 'top-bar'>About</li></a>
             <a href='signin.html' target='_self'><li class = 'top-bar' >Sign in/Create account</li></a>
@@ -25,6 +29,7 @@ crossorigin="anonymous"></script>
             <a href="#" onclick="openModal('share-modal', 'close-modal-share')"><li class = 'top-bar'>Share</li></a>
             <a href="#" onclick="openModal('credits-modal', 'close-modal-credits')"><li class = 'top-bar'>Credits</li></a>
         </ul>
+    </div>
 
         <div id="about-me-modal" class="modal">
             <div id="about-me-modal-content" class="modal-content">
@@ -42,7 +47,7 @@ crossorigin="anonymous"></script>
                                 <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
                         </div>
                 </div>
-        </div>
+        
         
         <div id="share-modal" class="modal">
             <div id="share-modal-content" class="modal-content">
@@ -70,39 +75,80 @@ crossorigin="anonymous"></script>
                     </div>
             </div>
         </div>
-
+    </div>
+        </div>
         <div class = 'opener'>
             <h1 id = 'title'>Dnd cubies!</h1>
             <h3 id = 'caption'>Welcome to your personal easy dungeons and dragons figure creator!</h3>
         </div>
-        <div class = 'siteContents'>
-            <ul>
-                <a href = 'http://orc-news.ru/dnd5eng.pdf' target = '_blank'><li>Stats for players</li></a>
-                <a href = 'https://orkerhulen.dk/onewebmedia/Monster%20Manual.pdf' target = '_blank'><li>Stats for monsters</li></a>
-                <a href = 'https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-b-gods-of-the-multiverse' target = '_blank'><li>Gods pantheon</li></a>
-            </ul>
-            <select class="ui dropdown">
-                    <option value="">Site Navigation</option>
-                    <option value="1"><a href = '#playersCubes'>For the Players</a></option>
-                    <option value="0"><a href = '#baddiesCubes'>Beasties and Baddies</a></option>
-            </select>
+        <div class="ui compact menu">
+                <div class="ui simple dropdown item">
+                  Additional Reference
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <a href = 'http://orc-news.ru/dnd5eng.pdf' target = '_blank'><div class="item">Player Stats</div></a>
+                    <a href = 'https://orkerhulen.dk/onewebmedia/Monster%20Manual.pdf' target = '_blank'><div class="item">Monster Stats</div></a>
+                    <a href = 'https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-b-gods-of-the-multiverse' target = '_blank'><div class="item">Gods Pantheon</div></a>
+                  </div>
+                </div>
+              </div>
+        <div class="ui compact menu">
+                <div class="ui simple dropdown item">
+                  Site Navigation
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="item">Good </div>
+                    <div class="item">Bad</div>
+                    <div class="item">Gods</div>
+                  </div>
+                </div>
+              </div>
+        <!--
+        <div class="ui vertical menu">
+                <a class="item">
+                  Home
+                </a>
+                <div class="ui left pointing dropdown link item">
+                  <i class="dropdown icon"></i>
+                  Messages
+                  <div class="menu">
+                    <div class="item">Inbox</div>
+                    <div class="item">Starred</div>
+                    <div class="item">Sent Mail</div>
+                    <div class="item">Drafts (143)</div>
+                    <div class="divider"></div>
+                    <div class="item">Spam (1009)</div>
+                    <div class="item">Trash</div>
+                  </div>
+                </div>
+                <a class="item">
+                  Browse
+                </a>
+                <a class="item">
+                  Help
+                </a>
+              </div>
+            -->
             <!--Insert images here, going to take those at home-->
-        </div>
+
         <div class = 'OptionGalleries'>
             <h1>Option Galleries</h1>
             <p>(clicking on image will take you to the respective gallery. Not all images have attached links at this point)</p>
             
             <h2 id = 'playersCubes' class = 'sectionHeading'>For the Players</h2>
             <div id="main-content" class="img center-content-container">
-                    <a href="PlayerCharachter.html" target="_blank">
-                    <div class="grid grid-left card">  
+                    
+                    <div class="grid grid-left card">
+                            <a href="PlayerCharachter.html" target="_blank">  
                             <i class="fas fa-fist-raised fa-10x"></i>
                             <h3 class="container">Player Charachters</h3> 
+                             </a>
                     </div>
-                    </a>
+                    
+                    
                     <div class="grid grid-right card">
-                            <a href="./Towers.html" target="_blank"><img src="./Tower.jpg" alt="A great tower looming over these lands" width=562.5 length=316.5> </a>
-                            <h3 class="container">Make Mejestic towers!</h3>
+                            <i class="fas fa-dice-d6 fa-10x"></i></a>
+                            <h3 class="container">NPC's</h3>
                     </div>  
                     
                     <div class="grid grid-left card">
