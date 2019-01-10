@@ -30,3 +30,23 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
   }
+
+
+  // draws stuff on stuff
+  function draw(x, y) {
+    var canvas = document.getElementById('tutorial');
+    if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+      var altX = x + 10;
+      var altY = y - 10;
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(altX, altY);
+      ctx.lineTo(altX + 30, altY);
+      ctx.lineTo(x + 50, y);
+      ctx.stroke();
+      for (var i = 0; i < 4; i++) {
+          ctx.strokeRect(x + (i * 50), y, 50, 50 )
+      }
+    }
+  }

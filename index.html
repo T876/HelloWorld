@@ -21,7 +21,7 @@ crossorigin="anonymous"></script>
     <body>
         <div id="zsticky">
         <img id = 'siteLogo' src = 'DungeonTech logo.jpg'>
-            <div id = 'stickyDiv'>
+        <div id = 'stickyDiv'>
         <ul class = 'header'>
             <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><li class = 'top-bar'>About</li></a>
             <a href='signin.html' target='_self'><li class = 'top-bar' >Sign in/Create account</li></a>
@@ -79,8 +79,9 @@ crossorigin="anonymous"></script>
         </div>
         <div class = 'opener'>
             <h1 id = 'title'>Dnd cubies!</h1>
-            <h3 id = 'caption'>Welcome to your personal easy dungeons and dragons figure creator!</h3>
+            
         </div>
+<div id = 'mainContent'>
         <div class="ui compact menu">
                 <div class="ui simple dropdown item">
                   Additional Reference
@@ -103,47 +104,23 @@ crossorigin="anonymous"></script>
                   </div>
                 </div>
               </div>
-        <!--
-        <div class="ui vertical menu">
-                <a class="item">
-                  Home
-                </a>
-                <div class="ui left pointing dropdown link item">
-                  <i class="dropdown icon"></i>
-                  Messages
-                  <div class="menu">
-                    <div class="item">Inbox</div>
-                    <div class="item">Starred</div>
-                    <div class="item">Sent Mail</div>
-                    <div class="item">Drafts (143)</div>
-                    <div class="divider"></div>
-                    <div class="item">Spam (1009)</div>
-                    <div class="item">Trash</div>
-                  </div>
-                </div>
-                <a class="item">
-                  Browse
-                </a>
-                <a class="item">
-                  Help
-                </a>
-              </div>
-            -->
-            <!--Insert images here, going to take those at home-->
+
+
 
         <div class = 'OptionGalleries'>
+                <h3 id = 'caption'>Welcome to your personal easy dungeons and dragons figure creator!</h3>
             <h1>Option Galleries</h1>
             <p>(clicking on image will take you to the respective gallery. Not all images have attached links at this point)</p>
             
             <h2 id = 'playersCubes' class = 'sectionHeading'>For the Players</h2>
             <div id="main-content" class="img center-content-container">
                     
-                    <div class="grid grid-left card">
-                            <a href="PlayerCharachter.html" target="_blank">  
+                <div class="grid grid-left card">
+                            <a class = 'link' href="PlayerCharachter.html" target="_blank">  
                             <i class="fas fa-fist-raised fa-10x"></i>
-                            <h3 class="container">Player Characters</h3> 
-                             </a>
-                    </div>
+                                <h3 class="container">Player Characters</h3> 
+                                </a>
+                </div>
                     
                     
                     <div class="grid grid-right card">
@@ -162,6 +139,6 @@ crossorigin="anonymous"></script>
                     </div>
             </div>
         </div>
-        
+</div>
     </body>
 </html>
