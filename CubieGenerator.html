@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>DnD Cubies | PC</title>
-        <script src = 'script.js'></script>
-    </head>
-    <body>
-        <p onclick="draw(30, 30); draw(250, 30);">Click here to generate Your cubie!</p>
-        <br/>
-        <br/>
-        <canvas id = 'tutorial' width = '600px' height = '300px'>
+<head>
+    
+    <script type="application/javascript">
+        function draw(x, y) {
+          var canvas = document.getElementById('tutorial');
+          if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            var altX = x + 10;
+            var altY = y - 10;
+            var myImage = new Image(10, 100);
+            myImage.src = 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/357/420/618/636272696881281556.png';
+            
+            ctx.font = '8px serif';
+            ctx.fillText('Wizard', altX - 3, altY + 8);
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(altX, altY);
+            ctx.lineTo(altX + 30, altY);
+            ctx.lineTo(x + 50, y);
+            ctx.stroke();
+
+            for (var i = 0; i < 4; i++) {
+                ctx.strokeRect(x + (i * 50), y, 50, 50 )
+                ctx.drawImage(myImage, x + (i *50) + 20, y, 15, 45);
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+        
+    <p onclick="draw(30, 30);">Click Here!</p>
+    <div>
+        <canvas id = 'tutorial' width = '400px' height = '400px'>
         </canvas>
-    </body>
+
+    </div>
+</body>
+
 </html>
