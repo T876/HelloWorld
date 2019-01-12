@@ -20,90 +20,91 @@ crossorigin="anonymous"></script>
 
     <body>
         <div id="zsticky">
-        <img id = 'siteLogo' src = 'DungeonTech logo.jpg'>
-        <div id = 'stickyDiv'>
-        <ul class = 'header'>
-            <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><li class = 'top-bar'>About</li></a>
-            <a href='signin.html' target='_self'><li class = 'top-bar' >Sign in/Create account</li></a>
-            <a href="#" onclick="openModal('contact-me-modal', 'close-modal-contact-me')"><li class = 'top-bar'>(currently) free dungeon generator!</li></a>
-            <a href="#" onclick="openModal('share-modal', 'close-modal-share')"><li class = 'top-bar'>Share</li></a>
-            <a href="#" onclick="openModal('credits-modal', 'close-modal-credits')"><li class = 'top-bar'>Credits</li></a>
-        </ul>
-    </div>
+                <img id = 'siteLogo' src = 'DungeonTech logo.jpg'>
+                <div id = 'stickyDiv'>
+                        <ul class = 'header'>
+                                <a href="#" onclick="openModal('about-me-modal', 'close-modal-about-me')"><li class = 'top-bar'>About</li></a>
+                                <a href='signin.html' target='_self'><li class = 'top-bar' >Sign in/Create account</li></a>
+                                <a href="http://dungeontech.org" target="_blank" ><li class = 'top-bar'>(currently) free dungeon generator!</li></a>
+                                <a href="#" onclick="openModal('share-modal', 'close-modal-share')"><li class = 'top-bar'>Share</li></a>
+                                <a href="#" onclick="openModal('credits-modal', 'close-modal-credits')"><li class = 'top-bar'>Credits</li></a>
+                        </ul>
+                </div>
 
-        <div id="about-me-modal" class="modal">
-            <div id="about-me-modal-content" class="modal-content">
-                    <span id="close-modal-about-me" class="close-modal">&times;</span>
-                    <div class="modal-info">
-                            <p>I'm a pretty cool dm fam</p>
-                    </div>
-            </div>
-        </div>
-
-        <div id="contact-me-modal" class="modal">
-                <div id="contact-me-modal-content" class="modal-content">
-                        <span id="close-modal-contact-me" class="close-modal">&times;</span>
-                        <div class="modal-info">
-                                <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
+                <div id="about-me-modal" class="modal">
+                        <div id="about-me-modal-content" class="modal-content">
+                                <span id="close-modal-about-me" class="close-modal">&times;</span>
+                                <div class="modal-info">
+                                        <p>I'm a pretty cool dm fam</p>
+                                </div>
                         </div>
                 </div>
-        
-        
-        <div id="share-modal" class="modal">
-            <div id="share-modal-content" class="modal-content">
-                    <span id="close-modal-share" class="close-modal">&times;</span>
-                    <div class="modal-info">
-                            <p id="share-modal-text">Share my website on your favorite platforms!</p>
-                            <ul id="social-media-list">
-                                    <a href="https://twitter.com" target="_blank" ><i id="share-twitter" class="share-icons fab fa-twitter"></i></a>
-                                    <a href="https://facebook.com" target="_blank" ><i id="share-facebook" class="share-icons fab fa-facebook-f"></i></a>
-                                    <a href="https://instagram.com" target="_blank" ><i id="share-instagram" class="share-icons fab fa-instagram"></i></a>
-                                    <a href="https://reddit.com" target="_blank" ><i id="share-reddit" class="share-icons fab fa-reddit-alien"></i></a>
-                            </ul>
-                            <input type=button onclick="copyToClipboard('#input-field-url')" id="input-field-url" value="http://danddcubies.com/">
-                    </div>
-            </div>
+
+                <div id="contact-me-modal" class="modal">
+                        <div id="contact-me-modal-content" class="modal-content">
+                                <span id="close-modal-contact-me" class="close-modal">&times;</span>
+                                <div class="modal-info">
+                                        <p>You can contact me by calling out, <br> "TANNY TAN TAN FRICKIN HEATON" ten times</p>
+                                </div>
+                        </div>
+                </div>
+                
+                <div id="share-modal" class="modal">
+                        <div id="share-modal-content" class="modal-content">
+                                <span id="close-modal-share" class="close-modal">&times;</span>
+                                <div class="modal-info">
+                                        <p id="share-modal-text">Share my website on your favorite platforms!</p>
+                                        <ul id="social-media-list">
+                                                <a href="https://twitter.com" target="_blank" ><i id="share-twitter" class="share-icons fab fa-twitter"></i></a>
+                                                <a href="https://facebook.com" target="_blank" ><i id="share-facebook" class="share-icons fab fa-facebook-f"></i></a>
+                                                <a href="https://instagram.com" target="_blank" ><i id="share-instagram" class="share-icons fab fa-instagram"></i></a>
+                                                <a href="https://reddit.com" target="_blank" ><i id="share-reddit" class="share-icons fab fa-reddit-alien"></i></a>
+                                        </ul>
+                                        <input type=button onclick="copyToClipboard('#input-field-url')" id="input-field-url" value="http://danddcubies.com/">
+                                </div>
+                        </div>
+                </div>
+                
+                <div id="credits-modal" class="modal">
+                        <div id="credits-modal-content" class="modal-content">
+                                <span id="close-modal-credits" class="close-modal">&times;</span>
+                                <div class="modal-info">
+                                        <p>T8 - The main guy <br/> 
+                                        Tanner - Assistant <em>to the</em> main guy <br/>
+                                        Corban - Helped with all of the stuff I didn't understand </p>
+                                </div>
+                        </div>
+                </div>
         </div>
         
-        <div id="credits-modal" class="modal">
-            <div id="credits-modal-content" class="modal-content">
-                    <span id="close-modal-credits" class="close-modal">&times;</span>
-                    <div class="modal-info">
-                            <p>T8 - The main guy <br/> 
-                            Tanner - Assistant <em>to the</em> main guy <br/>
-                            Corban - Helped with all of the stuff I didn't understand </p>
-                    </div>
-            </div>
-        </div>
-    </div>
-        </div>
+        
         <div class = 'opener'>
             <h1 id = 'title'>Dnd cubies!</h1>
-            
         </div>
-<div id = 'mainContent'>
-        <div class="ui compact menu">
-                <div class="ui simple dropdown item">
-                  Additional Reference
-                  <i class="dropdown icon"></i>
-                  <div class="menu">
-                    <a href = 'http://orc-news.ru/dnd5eng.pdf' target = '_blank'><div class="item">Player Stats</div></a>
-                    <a href = 'https://orkerhulen.dk/onewebmedia/Monster%20Manual.pdf' target = '_blank'><div class="item">Monster Stats</div></a>
-                    <a href = 'https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-b-gods-of-the-multiverse' target = '_blank'><div class="item">Gods Pantheon</div></a>
-                  </div>
+
+        <div id = 'mainContent'>
+                <div class="ui compact menu">
+                        <div class="ui simple dropdown item">
+                        Additional Reference
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                        <a href = 'http://orc-news.ru/dnd5eng.pdf' target = '_blank'><div class="item">Player Stats</div></a>
+                        <a href = 'https://orkerhulen.dk/onewebmedia/Monster%20Manual.pdf' target = '_blank'><div class="item">Monster Stats</div></a>
+                        <a href = 'https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-b-gods-of-the-multiverse' target = '_blank'><div class="item">Gods Pantheon</div></a>
+                        </div>
+                        </div>
                 </div>
-              </div>
-        <div class="ui compact menu">
-                <div class="ui simple dropdown item">
-                  Site Navigation (NF)
-                  <i class="dropdown icon"></i>
-                  <div class="menu">
-                    <div class="item">Good </div>
-                    <div class="item">Bad</div>
-                    <div class="item">Gods</div>
-                  </div>
+                <div class="ui compact menu">
+                        <div class="ui simple dropdown item">
+                        Site Navigation (NF)
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                        <div class="item">Good </div>
+                        <div class="item">Bad</div>
+                        <div class="item">Gods</div>
+                        </div>
+                        </div>
                 </div>
-              </div>
 
 
 
